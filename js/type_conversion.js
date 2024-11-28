@@ -13,8 +13,19 @@
 
 // 1. Функция `String()`** - Преобразует значение в строковый тип.
 {
-  console.log(String(42)); // '42'
-  console.log(String(true)); // 'true'
+  let exampleValue = 42;
+
+  console.log(typeof exampleValue, exampleValue);
+
+  exampleValue = String(exampleValue); // 42 => "42"
+
+  console.log(typeof exampleValue, exampleValue); // '42'
+
+  console.log(
+    "----------------------------------------------------------------"
+  );
+
+  console.log(String(true)); // true => "true"
   console.log(String(null)); // 'null'
   console.log(String(undefined)); // 'undefined'
   console.log(String({})); // '[object Object]'
@@ -24,8 +35,8 @@
 // 2. **Методы преобразования строки**
 // - **Метод `toString()`**: Вызывается у объектов и преобразует их в строку.
 {
-  console.log((42).toString()); // '42'
-  console.log(true.toString()); // 'true'
+  console.log((42).toString()); // 42 => '42'
+  console.log(true.toString()); // true => 'true'
   console.log([1, 2, 3].toString()); // '1,2,3'
 }
 
@@ -51,7 +62,7 @@
 
 {
   let value = 123;
-  let result = "Value is: " + value; // 'Value is: 123'
+  let result = "Value is: " + value; // "Value is: " + value => "Value is: 123"
   console.log(result);
 }
 
@@ -131,9 +142,6 @@
 //Логическое преобразование также происходит автоматически в условиях, где требуется булев тип. Это часто встречается в условных операторах, таких как `if`, `while`, и в логических операциях.
 // ### Значения, приводимые к `false` (falsy values):
 
-// - `0`
-// - `undefined`
-// - `NaN`
-// - `""`
+// - 0 - null - undefined - NaN - "";
 
 //### В остальных случаях всегда true

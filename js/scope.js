@@ -2,14 +2,14 @@
 // - Глобальная область видимости (Global Scope)
 // - Функциональная область видимости (Function Scope)
 // - Блочная область видимости (Block Scope)
-// - Лексическая область видимости (Lexical Scope)
+// - Лексическая область видимости (Lexical Scope) clousers
 // - Module scope
 
 // Global Scope
 // Это область видимости, которая охватывает весь код, за пределами функций и блоков. Все переменные и функции, объявленные в глобальной области видимости, доступны везде в вашем коде.
-
 {
   let globalVal = "I am global";
+
   function showGlobal() {
     console.log(globalVal); // "I am global"
   }
