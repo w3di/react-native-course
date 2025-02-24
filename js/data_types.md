@@ -102,6 +102,8 @@ const exampleFalseBoolean = false;
 let exampleUndefined;
 let anotherExampleUndefined = undefined;
 console.log(exampleUndefined); // undefined
+console.log(anotherExampleUndefined); // undefined
+
 ```
 
 ### Null
@@ -122,3 +124,11 @@ const exampleNull = null;
 - `Function`
 - `Date`
 - `RegExp`
+- `Error`
+
+### Общие характеристики объектных типов
+
+- **Мутабельность:** Объекты изменяемы. Вы можете изменять их свойства после создания.
+- **Сравнение по ссылке:** Объектные значения сравниваются по ссылке, а не по значению.
+- **Хранят ссылки на значения:** Переменные, содержащие объектные типы, хранят ссылки на объекты, а не сами значения.
+- **Методы и свойства:** Объекты могут иметь методы и свойства, которые могут быть вызваны и изменены.
